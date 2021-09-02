@@ -52,7 +52,6 @@ export default function header() {
     // read github user
     let githubResponse = await fetch(`https://api.github.com/users/meutshuk`);
     let githubUser = await githubResponse.json();
-    console.log(githubResponse);
 
     userImg.src = githubUser.avatar_url;
 

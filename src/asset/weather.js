@@ -38,8 +38,6 @@ export default function weather(data) {
 
   weatherImg.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
 
-  console.log(data.weather[0].description);
-
   mainDiv.innerText = "";
 
   weatherCondition.appendChild(weatherImg);

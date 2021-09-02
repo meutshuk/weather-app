@@ -14,7 +14,7 @@ container.appendChild(mainDiv);
 async function weatherData(location) {
   if (!location) location = "wollongong";
 
-  const url = `http://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&APPID=${superSecretAPIKEYNoStealPlzLoveYou}`;
+  const url = `http://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&APPID=${superSecretAPIKEYNoStealPlzLoveYou}`;
 
   const response = await fetch(url);
   const data = await response.json();
